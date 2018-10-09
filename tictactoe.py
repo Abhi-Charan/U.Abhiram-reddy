@@ -27,5 +27,9 @@ while True:
 				print("player2 >>")
 				a[int(p)-1] ="x"
 				playeroneturn = not playeroneturn
+			for i in(0,3,6):
+				if(a[i]==a[i+3] and a[i]==a[i+6]):
+					print("game over")
+					exit()
 	else:
 		continue
